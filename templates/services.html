@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services | Candy Land</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='background.jpg') }}");
+            background-attachment: fixed;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+            color: white;
+        }
+        .navbar {
+            background-color: #f4a460;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .service {
+            margin-bottom: 20px;
+        }
+        .service h2 {
+            margin-top: 0;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="about">About</a>
+        <a href="services">Services</a>
+    </div>
+    <div class="content">
+        <h1>Our Services</h1>
+        <div class="service">
+            <h2>Candy Making</h2>
+            <p>We create a wide range of candies from traditional favorites to innovative new flavors, all made with love and the finest ingredients.</p>
+        </div>
+        <div class="service">
+            <h2>Candy Catering</h2>
+            <p>Want to make your next event even sweeter? Our candy catering service provides a delightful assortment of candies to delight your guests.</p>
+        </div>
+        <div class="service">
+            <h2>Custom Orders</h2>
+            <p>Looking for something unique? We can create custom candy orders tailored to your specific needs and tastes.</p>
+        </div>
+        <a href="#" class="cta-button">Contact Us</a>
+    </div>
+</body>
+</html>

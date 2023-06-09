@@ -1,0 +1,6 @@
+# Ignore Uploaded Content
+/uploads/*
+
+# Ignore Virtual Environments
+env
+venv

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About | Candy Land</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='background.jpg') }}");
+            background-attachment: fixed;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+            color: white;
+        }
+        .navbar {
+            background-color: #f4a460;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="about">About</a>
+        <a href="services">Services</a>
+
+    </div>
+    <div class="content">
+        <h1>About Us</h1>
+        <p>Welcome to the wonderful world of Candy Land, where all your sweetest dreams come true. We've been delivering joy and sweetness since 1990, making the world a happier place one candy at a time.</p>
+        <p>Our team of expert candy craftsmen uses traditional techniques and the finest ingredients to create candies that are not just delicious but also a feast for the eyes. We believe that candy making is an art, and every candy we make is a masterpiece.</p>
+        <a href="#" class="cta-button">Learn More</a>
+    </div>
+</body>
+</html>
